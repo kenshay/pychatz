@@ -20,6 +20,10 @@ jobs:
         pip install
         build
         --user
+    - name: Install poetry
+      run: |
+      curl -sSL https://install.python-poetry.org | python -
+      
 
     # Install dependencies
     - name: Installs dependencies
@@ -28,13 +32,9 @@ jobs:
         python -m pip install setuptools wheel twine
 
     - name: Build a binary wheel and a source tarball
-      run: >-
-        python -m
-        build
-        --sdist
-        --wheel
-        --outdir dist/
-        .
+      run: |
+	poetry build
+
     - name: Publish distribution 📦 to PyPI
       uses: pypa/gh-action-pypi-publish@master
       with:
