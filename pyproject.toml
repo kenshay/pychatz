@@ -1,12 +1,12 @@
 [tool.poetry]
-name = "httpx"
-version = "0.22.0"
+name = "pychatz"
+version = "1.0.0"
 description = ""
 authors = ["Your Name <you@example.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.9"
-
+httpx = "^0.22.0"
 [tool.poetry.dev-dependencies]
 
 [build-system]
