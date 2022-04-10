@@ -32,7 +32,6 @@ jobs:
       uses: pypa/gh-action-pypi-publish@master
       with:
         verbose: true      
-      with:
         repository_url: https://pypi.org/manage/project/pychatz
         password: ${{ secrets.PYPI_API_TOKEN }}
       
