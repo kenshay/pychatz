@@ -31,5 +31,5 @@ jobs:
     - name: Publish distribution 📦 to PyPI
       uses: pypa/gh-action-pypi-publish@master
       with:
-	repository_url: https://pypi.org/manage/project/pychatz
+        repository_url: https://pypi.org/manage/project/pychatz
         password: ${{ secrets.PYPI_API_TOKEN }}
