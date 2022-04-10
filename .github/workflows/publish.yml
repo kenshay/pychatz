@@ -22,7 +22,7 @@ jobs:
         --user
     - name: Install poetry
       run: |
-      curl -sSL https://install.python-poetry.org | python -
+        curl -sSL https://install.python-poetry.org | python -
       
 
     # Install dependencies
