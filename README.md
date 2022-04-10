@@ -1,2 +1,2 @@
 # pychatz
-# Author: Shay
+# Author: Kenny and Shay
